@@ -6,3 +6,8 @@ uvicorn
 pydantic
 pyjwt 
 passlib[bcrypt]
+pdfplumber
+python-docx
+spacy
+regex
+python-multipart
