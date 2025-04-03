@@ -14,3 +14,5 @@ async def upload_resume(file: UploadFile = File(...)) -> Dict[str, Any]:  # Chan
 
     extracted_data = extract_resume_data(text)
     return extracted_data
+
+    

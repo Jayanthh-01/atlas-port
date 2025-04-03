@@ -33,7 +33,6 @@ def extract_text_from_docx(docx_file) -> str:
         return "\n".join([para.text for para in doc.paragraphs])
     except Exception as e:
         raise HTTPException(status_code=500, detail=f"Error extracting DOCX text: {str(e)}")
-
 def extract_name(text: str) -> str:
     """Extract the name using Named Entity Recognition (NER) with spaCy."""
     doc = nlp(text)

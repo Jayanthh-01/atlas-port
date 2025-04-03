@@ -11,3 +11,4 @@ python-docx
 spacy
 regex
 python-multipart
+groq
