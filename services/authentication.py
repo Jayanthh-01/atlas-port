@@ -7,7 +7,7 @@ from pydantic_settings import BaseSettings
 import os
 
 class Settings(BaseSettings):
-    secret_key: str = "default-secret-key" 
+    secret_key: str = "jay" 
     algorithm: str = "HS256"
     access_token_expire_minutes: int = 30
 
