@@ -12,3 +12,4 @@ spacy
 regex
 python-multipart
 groq
+pydantic_settings

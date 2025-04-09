@@ -8,7 +8,6 @@ def create_user(db:Session,user:UserCreate):
         username=user.username,
         email=user.email,
         password=user.password
-
     )
     db.add(new_user)
     db.commit()

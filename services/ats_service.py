@@ -45,7 +45,7 @@ async def ats_metrics(resume_data: str, job_description: str) -> Dict[str, Any]:
             temperature=0.3
         )
         
-        # Parse and return the JSON response
+        
         return json.loads(response.choices[0].message.content)
         
     except Exception as e:

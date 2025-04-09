@@ -8,3 +8,9 @@ class User(Base):
     username = Column(String, nullable=False)
     email = Column(String, unique=False, nullable=False)
     password = Column(String, nullable=False)  
+
+
+class Admin(Base):
+    __tablename__="Admin"
+
+    id=Column(Integer,primary_key=True,index=True)

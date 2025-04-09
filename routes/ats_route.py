@@ -14,7 +14,7 @@ async def get_ats_details(file:UploadFile=File(...),job_description:str=Form(...
         else:
             raise HTTPException(status_code=400, detail="Unsupported file format. Upload a PDF or DOCX file.")
 
-        # Extract structured resume data
+        
         ats_metric =await  ats_metrics(text,job_description)
 
 
