@@ -49,7 +49,7 @@ async def generate_interview_questions(resume_text: str, job_role: str, experien
                 {"role": "system", "content": "You are a resume analyzer and interview question generator."},
                 {"role": "user", "content": prompt},
             ],
-            model=os.getenv("GROQ_MODEL", "qwen-2.5-coder-32b"),  
+            model=os.getenv("GROQ_MODEL", "llama3-70b-8192"),  
             response_format={"type": "json_object"}  
         )
         
