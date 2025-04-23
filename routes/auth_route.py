@@ -37,7 +37,7 @@ async def login(data: LoginRequest, db: Session = Depends(get_db)):
     access_token = create_access_token(
         data={"sub": str(user.id)} 
     )
-    return {"access_token": access_token, "token_type": "bearer"}
+    return {"access_token": access_token, "token_type": "bearer" ,"username":user.username}
 
 @auth_router.post("/register", status_code=status.HTTP_201_CREATED)
 async def register(data: UserCreate, db: Session = Depends(get_db)):

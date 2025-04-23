@@ -7,6 +7,7 @@ ats_router=APIRouter()
 @ats_router.post("/ats-details")
 async def get_ats_details(file:UploadFile=File(...),job_description:str=Form(...)):
     try:
+        print("got file and job desc")
         if file.filename.endswith(".pdf"):
             text =  extract_text_from_pdf(file.file)
         elif file.filename.endswith(".docx"):
